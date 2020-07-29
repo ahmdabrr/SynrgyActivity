@@ -6,15 +6,14 @@ import android.os.Bundle
 import android.util.Log
 import kotlinx.android.synthetic.main.activity_halamanke2.*
 
-class Halamanke2 : MainActivity() {
+class Halamanke2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_halamanke2)
         Log.d(Halamanke2::class.java.simpleName, "OnCreate dijalankan pada halaman 2")
 
         btnHalaman2.setOnClickListener{
-            val intent = Intent (this, MainActivity::class.java)
-            startActivity(intent)
+            finish()
         }
     }
 
